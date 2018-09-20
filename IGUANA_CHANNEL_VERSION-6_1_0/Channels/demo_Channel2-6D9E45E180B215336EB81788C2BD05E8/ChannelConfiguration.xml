@@ -1,0 +1,19 @@
+<channel
+   name="demo_Channel2"
+   guid="6D9E45E180B215336EB81788C2BD05E8"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="demo_Channel2-To-c4NsBOpjo4pWGa"
+      commit_id="e0f6d40c1723d9b3ea370b1469a066896129dfaf"
+      commit_comment="u">
+      <dequeue_list>
+         <dequeue
+            source_name="demo_Channel1"
+            dequeue_guid="063B99D8129BDBA0715DC93F836CB13C"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>

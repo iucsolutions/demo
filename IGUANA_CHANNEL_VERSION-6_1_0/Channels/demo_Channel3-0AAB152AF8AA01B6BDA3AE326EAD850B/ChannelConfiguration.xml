@@ -1,0 +1,45 @@
+<channel
+   name="demo_Channel3"
+   guid="0AAB152AF8AA01B6BDA3AE326EAD850B"
+   description=""
+   start_automatically="false"
+   logging_level="2"
+   use_message_filter="true">
+   <to_file
+      output_dir="${destDirGROUPNAME}/"
+      write_to_separate_file="true"
+      output_single_filename=""
+      use_prepended_info_as_filename="false"
+      output_file_id_type="1"
+      output_filename_mask="%i.txt"
+      temp_file_extension="tmp"
+      count_of_padding_digit="5"
+      ftp_server="ec2-184-72-202-147.compute-1.amazonaws.com"
+      ftp_username="GROUPNAME"
+      ftp_password="4Kp/jDu9n9qKHY6nAxvV/7BLHIBCCvYem9u0ZVMYhTE="
+      ftp_path="${ftpPathGROUPNAME}"
+      ftp_max_reconnect="5"
+      sftp_authentication_method="user_password"
+      use_ftp="true">
+      <dequeue_list>
+         <dequeue
+            source_name="demo_Channel1"
+            dequeue_guid="42DACF216148BCBF959BEB092899CF67"/>
+      </dequeue_list>
+   </to_file>
+   <from_channel/>
+   <message_filter
+      filter_after_logging="true"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true"
+      translator_guid="demo_Channel3-Filter-sYy0CJMzQdnyRm"
+      translator_commit_id="abfa5c58374cc82f1300d62aabd59fb8251b85bb"
+      translator_commit_comment="Import Translators: demo">
+   </message_filter>
+</channel>
