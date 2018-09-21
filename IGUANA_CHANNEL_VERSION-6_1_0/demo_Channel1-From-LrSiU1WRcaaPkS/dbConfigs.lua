@@ -1,6 +1,6 @@
 local dbConfigs = {}
 
-local groupName = 'GROUPNAME'    -- Enter group name here
+local groupName = 'demo'    -- Enter group name here
 local dbPath = '/home/centos/iuc/centralDB/'..groupName..'/'
 local dbName = 'Channel1.sqlite'
 
